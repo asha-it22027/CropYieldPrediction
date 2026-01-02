@@ -1,0 +1,61 @@
+:root {
+    --nature-green: #4CAF50;
+    --nature-brown: #795548;
+    --nature-blue: #03A9F4;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1678483874487-a4d6f8ceffe9');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--nature-green);
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--nature-green);
+    border-color: var(--nature-green);
+}
+
+.btn-primary:hover {
+    background-color: #43A047;
+    border-color: #43A047;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .card {
+        margin-bottom: 2rem;
+    }
+}
